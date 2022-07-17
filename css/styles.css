@@ -1,0 +1,46 @@
+/* Переменные  */
+:root {
+    --primary-text-color: #212121;
+    --first-text-color: #757575;
+    --second-text-color: #FFFFFF;
+    --accent-text-color: #2196F3;
+                        
+}
+/* цвет тел и емейла в футере  rgba(255, 255, 255, 0.6)
+background-color: #E5E5E5;
+ 
+ */
+ body {
+    background-color: #E5E5E5;
+   color: #212121;
+ }
+ ul {
+    list-style: none;  
+ }
+ /* логотип */
+ .logo {color: #000000;
+    
+ }
+ .logo .logo-color {color: #2196F3;
+} 
+.logo:focus {color: var(--accent-text-color);}
+/* header */
+.header {
+    background-color: #FFFFFF;
+}
+.header .link {
+text-decoration: none;
+
+
+}
+
+
+
+.site-nav .link {
+    color: var(--primary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus
+ {
+    color: var(--accent-text-color);
+}
