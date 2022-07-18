@@ -4,6 +4,9 @@
     --first-text-color: #757575;
     --second-text-color: #FFFFFF;
     --accent-text-color: #2196F3;
+    --primary-background-color: #E5E5E5;
+    --second-background-color: #2F303A;
+    --accent-background-color: #2196F3;
                         
 }
 /* цвет тел и емейла в футере  rgba(255, 255, 255, 0.6)
@@ -11,36 +14,70 @@ background-color: #E5E5E5;
  
  */
  body {
-    background-color: #E5E5E5;
+   background-color: var(--primary-background-color);
    color: #212121;
  }
  ul {
     list-style: none;  
  }
- /* логотип */
- .logo {color: #000000;
-    
- }
- .logo .logo-color {color: #2196F3;
-} 
-.logo:focus {color: var(--accent-text-color);}
-/* header */
+ /* header */
 .header {
     background-color: #FFFFFF;
 }
-.header .link {
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-text-color);
+}
+.header .link,
+.footer .link {
 text-decoration: none;
-
-
 }
 
-
+ /* логотип */
+ .logo {color: var(--primary-text-color);  
+ }
+ .logo .logo-color {color: var(--accent-text-color);
+} 
 
 .site-nav .link {
     color: var(--primary-text-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus
+.contact .link:hover,
+.contact .link:focus
  {
     color: var(--accent-text-color);
+}
+/* hero */
+.hero {
+    background-color: var(--second-background-color);
+    color: var(--second-text-color);
+}
+.button {
+    color: var(--second-text-color);
+    background-color: var(--accent-background-color);
+}
+/* Features */
+.features .text {
+    color: var(--first-text-color);
+}
+/* наша команда */
+.team {
+    background-color: #F5F4FA;
+}
+.team .position {
+    color: var(--first-text-color);
+}
+/* footer */
+.footer {
+    background-color: var(--second-background-color);
+}
+.studio-color {
+    color: var(--second-text-color);
+}
+.footer .contact-item {
+color: rgba(255, 255, 255, 0.6);
+}
+.footer .address-contact {
+    color: var(--second-text-color);
+
 }
