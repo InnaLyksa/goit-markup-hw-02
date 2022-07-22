@@ -6,7 +6,7 @@
   --accent-text-color: #2196f3;
   --primary-background-color: #e5e5e5;
   --second-background-color: #2f303a;
-  --accent-background-color: #2196f3;
+  --accent-btn-background-color: #2196f3;
 }
 
 body {
@@ -56,7 +56,7 @@ margin: -1px;
   color: var(--accent-text-color);
 }
 
-.logo-color {
+.nav-link span{
   color: var(--primary-text-color);
 }
 
@@ -91,10 +91,9 @@ margin: -1px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.button {
+.hero-button {
   color: var(--second-text-color);
-
-  background-color: var(--accent-background-color);
+  background-color: var(--accent-btn-background-color);
 
   font-family: 'Roboto';
   font-weight: 700;
@@ -130,15 +129,19 @@ margin: -1px;
 .team {
   background-color: #f5f4fa;
 }
-.team .name-title {
+
+.team-list .team-item{
+background-color: #FFFFFF;
+}
+
+.team .team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 
-.team .name-position {
-  font-size: 16px;
+.team .team-position {
   line-height: 1.19;
   text-align: center;
   color: var(--first-text-color);
@@ -148,7 +151,7 @@ margin: -1px;
 .footer {
   background-color: var(--second-background-color);
 }
-.footer .logo-color {
+.footer span {
   color: var(--second-text-color);
 }
 .footer .contact-item {
@@ -180,10 +183,15 @@ margin: -1px;
 .filters .filters-btn:hover,
 .filters .filters-btn:focus {
   color: var(--second-text-color);
-  background-color: var(--accent-background-color);
+  background-color: var(--accent-btn-background-color);
 }
 .filters-btn {
   cursor: pointer;
+}
+
+.filters-list .filters-card {
+  background-color: #FFFFFF;
+
 }
 .filters-title {
   font-weight: 700;
