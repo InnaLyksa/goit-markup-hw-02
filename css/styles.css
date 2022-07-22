@@ -4,7 +4,7 @@
   --first-text-color: #757575;
   --second-text-color: #ffffff;
   --accent-text-color: #2196f3;
-  --primary-background-color: #e5e5e5;
+
   --second-background-color: #2f303a;
   --accent-btn-background-color: #2196f3;
 }
@@ -12,8 +12,6 @@
 body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  
-  background-color: var(--primary-background-color);
   color: var(--primary-text-color);
 }
 
@@ -95,7 +93,7 @@ margin: -1px;
   color: var(--second-text-color);
   background-color: var(--accent-btn-background-color);
 
-  font-family: 'Roboto';
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
